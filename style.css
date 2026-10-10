@@ -679,3 +679,85 @@ footer p {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* ==================================
+   RECIPE QUICK REFERENCE TABLE
+   ================================== */
+
+/* Table Section */
+.recipe-guide {
+    background-color: var(--background);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.recipe-guide h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.recipe-guide p {
+    color: var(--text);
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+/* Responsive Table Container */
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+/* Table Layout */
+.recipe-guide table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: left;
+}
+
+/* Table Caption */
+.recipe-guide caption {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    padding: 10px;
+}
+
+/* Table Header */
+.recipe-guide th {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border: 1px solid var(--primary);
+}
+
+/* Table Cells */
+.recipe-guide td {
+    padding: 12px 15px;
+    border: 1px solid var(--secondary);
+    color: var(--text);
+}
+
+/* Alternating Row Colors */
+.recipe-guide tbody tr:nth-child(even) {
+    background-color: var(--secondary);
+}
+
+/* Highlight Row on Hover */
+.recipe-guide tbody tr:hover {
+    background-color: #ffe1bd;
+}
+
+/* Recipe Links */
+.recipe-guide td a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.recipe-guide td a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
