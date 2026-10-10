@@ -1,15 +1,16 @@
-
 :root {
     --text: #4b2c2a;
     --background: #fff7e5;
     --primary: #b83232;
     --secondary: #f4c6a9;
-    --accent: #e77e23;
-}
+    --accent: #e77e23;}
 
 * {box-sizing: border-box;}
 
-body {margin: 0;
+html {scroll-behavior: smooth;}
+
+body {
+    margin: 0;
     background-color: var(--background);
     color: var(--text);
     font-family: "Poppins", Arial, sans-serif;
@@ -21,84 +22,660 @@ img {max-width: 100%;
 a {color: var(--text);
     text-decoration: none;}
 
-a:hover {
-    color: var(--accent);
-}
+a:hover {color: var(--accent);}
 
 header {background-color: var(--primary);
     color: white;
     text-align: center;
     padding: 30px 20px;}
 
-header h1 {
-    margin: 0;
+header h1 {margin: 0;
     font-family: "Bebas Neue", sans-serif;
     font-size: 3.5rem;
-    letter-spacing: 2px;
-}
+    letter-spacing: 2px;}
 
-header p {
-    margin: 5px 0 0;
-    font-size: 1rem;
-}
+header p {margin: 5px 0 0;
+    font-size: 1rem;}
 
 nav {background-color: var(--secondary);
-    text-align: center;
-    padding: 15px;}
+    padding: 15px 20px;
+    text-align: center;}
 
 nav ul {list-style-type: none;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 30px;}
 
-nav li {display: inline-block;
-    margin: 0 15px;}
+nav li { margin: 0;}
 
 nav a {color: var(--text);
     font-weight: bold;
     font-size: 1rem;}
 
-nav a:hover {color: var(--accent);}
+nav a:hover {color: var(--primary);}
+
+section {padding: 50px 20px;}
+
+section h2 {margin-top: 0;
+    color: var(--primary);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-align: center;}
+
+section p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .hero {background-color: var(--accent);
-    color: white;
+    color: maroon;
     text-align: center;
-    padding: 80px 20px;}
+    padding: 75px 20px;}
 
-.hero h2 { margin-top: 0;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
-    letter-spacing: 1px;}
+.hero h2 {margin-top: 0;
+    color: maroon;
+    font-size: 3rem;}
 
 .hero p {max-width: 700px;
     margin: 0 auto 25px;
     font-size: 1.1rem;}
 
-.button {display: inline-block;
+.button {
+    display: inline-block;
     background-color: var(--primary);
     color: white;
     padding: 12px 25px;
     border-radius: 6px;
     font-weight: bold;
-    transition: background-color 0.3s ease;}
-
-.button:hover {background-color: var(--text);
-    color: white;}
-
-section {padding: 50px 20px;}
-
-section h2 {color: var(--primary);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 2.5rem;
     text-align: center;
-    letter-spacing: 1px;}
+    transition: background-color 0.3s ease;
+}
 
-section p {max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;}
+.button:hover {
+    background-color: var(--text);
+    color: white;
+}
 
 
-.intro {background-color: var(--background);
-    text-align: center;}
+/* ==========================================
+   INTRODUCTION SECTION
+   ========================================== */
 
-.intro p {font-size: 1.05rem;}
+.intro {
+    background-color: var(--background);
+    text-align: center;
+}
 
+.intro p {
+    font-size: 1.05rem;
+}
+
+#recipes {
+    background-color: var(--secondary);
+}
+
+.recipe-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.recipe-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(75, 44, 42, 0.15);
+}
+
+.recipe-image {
+    height: 180px;
+    background-color: var(--background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    font-weight: bold;
+}
+
+.recipe-card-content {
+    padding: 20px;
+}
+
+.recipe-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8rem;
+}
+
+.recipe-card p {
+    margin-bottom: 15px;
+}
+
+.recipe-card a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.recipe-card a:hover {
+    color: var(--accent);
+}
+
+
+
+#anime {
+    background-color: var(--background);
+}
+
+.anime-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: var(--primary);
+    color: white;
+    width: 220px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.anime-card h3 {
+    margin-top: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7rem;
+}
+
+.anime-card p {
+    font-size: 0.95rem;
+}
+
+
+#about {
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+#about p {
+    max-width: 750px;
+}
+
+#contact {
+    background-color: var(--background);
+}
+
+#contact > p {
+    text-align: center;
+    max-width: 750px;
+    margin-bottom: 30px;
+}
+
+.recipe-category {
+    background-color: var(--background);
+    padding: 50px 20px;
+}
+
+
+.recipe-category:nth-of-type(odd) {
+    background-color: var(--secondary);
+}
+
+.recipe-category > h2 {
+    margin-bottom: 35px;
+}
+
+.recipe-item {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    box-shadow: 0 4px 10px rgba(75, 44, 42, 0.15);
+}
+
+.recipe-item:last-child {
+    margin-bottom: 0;
+}
+
+.recipe-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.recipe-info h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--primary);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.anime-name {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: var(--text);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+
+.anime-name span {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.recipe-info p:not(.anime-name) {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+/* Recipe Photo - Right Side */
+
+.recipe-photo {
+    width: 300px;
+    height: 220px;
+    flex-shrink: 0;
+
+    background-color: var(--background);
+    border: 2px dashed var(--accent);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    text-align: center;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.recipe-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.anime-page {
+    background-color: var(--background);
+    padding: 50px 20px;
+    min-height: 600px;
+}
+
+.anime-page > p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.anime-list-item {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    padding: 20px 25px;
+
+    background-color: var(--secondary);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 3px 8px rgba(75, 44, 42, 0.12);
+}
+
+.anime-list-item h3 {
+    margin: 0;
+    color: var(--text);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+}
+
+.anime-list-item a {
+    background-color: var(--accent);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.anime-list-item a:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.about-page {
+    background-color: var(--background);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-page h2 {
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.about-page p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+
+#contact form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(75, 44, 42, 0.15);
+}
+
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 0;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.form-row:first-child {
+    padding-top: 0;
+}
+
+.form-row:last-of-type {
+    border-bottom: none;
+}
+
+#contact .form-row label {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    color: var(--text);
+    font-weight: bold;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+
+#contact button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 30px;
+
+    background-color: var(--accent);
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: var(--primary);
+}
+
+footer {
+    background-color: var(--text);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 900px) {
+
+    .recipe-item {
+        gap: 20px;
+    }
+
+    .recipe-photo {
+        width: 250px;
+        height: 190px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    /* Header */
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Navigation */
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero */
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* General Sections */
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    .recipe-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .anime-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    .recipe-item {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .recipe-photo {
+        width: 100%;
+        height: 220px;
+    }
+
+    .recipe-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .anime-list-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    /* About Page */
+
+    .about-page p {
+        font-size: 1rem;
+    }
+
+    /* Contact Form */
+
+    #contact form {
+        padding: 20px;
+    }
+
+    .form-row {
+        padding: 12px 0;
+    }
+
+}
+
+.recipe-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-photo a,
+.recipe-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.recipe-photo img,
+.recipe-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-photo a:hover,
+.recipe-image a:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.recipe-photo a:focus-visible,
+.recipe-image a:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.contact-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-section {
+    background-color: var(--background);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video-section h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.video-section p {
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+
+.video-section video {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
