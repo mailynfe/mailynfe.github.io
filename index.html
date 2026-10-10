@@ -2,23 +2,29 @@
 <html lang="en">
 
 <head>
-    
-    <title>Anime Bites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Anime Bites :: Home</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Website Header -->
     <header>
         <h1>Anime Bites</h1>
-        <p>Recipes Featured Found in Your Favorite Anime</p>
+        <p>Recipes Inspired by Anime</p>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,127 +35,303 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <main>
 
-        <h2>Bring Anime Food to Life</h2>
+        <section class="hero">
 
-        <p>
-            Discover delicious recipes inspired by the food featured
-            in your favorite anime. From ramen and onigiri to sweet
-            treats, Anime Bites makes it easy to bring anime-inspired
-            dishes into your own kitchen.
-        </p>
+            <h2>Bring Anime Food to Life</h2>
 
-        <a href="recipes.html" class="button">Explore Recipes</a>
+            <p>
+                Have you ever watched an anime and wished
+                you could try the delicious food on screen?
+                Anime Bites brings those dishes to life
+                with recipes inspired by your favorite shows!
+            </p>
+
+            <a href="recipes.html" class="button">
+                Explore Recipes
+            </a>
+
+        </section>
+
+<section class="video-section">
+    <h2>A Taste of Anime Bites</h2>
+
+    <p>
+        Get inspired to bring delicious anime-style
+        dishes into your own kitchen!
+    </p>
+
+    <video controls playsinline preload="metadata">
+        <source src="13571299_3840_2160_30fps.mp4"
+                type="video/mp4">
+
+        Your browser does not support HTML5 video.
+    </video>
+</section>
 
 
-    <section class="intro">
+        <section class="intro">
 
-        <h2>Welcome to Anime Bites</h2>
+            <h2>Welcome to Anime Bites!</h2>
 
-        <p>
-            Anime Bites is a recipe website created for anime fans
-            who love food and cooking. Explore recipes inspired by
-            popular anime and learn more about the dishes that appear
-            throughout your favorite shows.
-        </p>
+            <p>
+                Anime Bites is a place where anime fans and
+                food lovers can discover dishes inspired by
+                their favorite shows. Explore Japanese comfort
+                foods, delicious snacks, and sweet desserts
+                that you can try making at home.
+            </p>
 
-        <p>
-            Whether you are a beginner in the kitchen or an experienced
-            cook, you can find recipes that are fun, simple, and inspired
-            by the world of anime.
-        </p>
+        </section>
 
-    </section>
 
-    <section id="recipes">
+        <section id="recipes">
 
-        <h2>Featured Recipes</h2>
+            <h2>Featured Recipes</h2>
 
-        <div class="recipe-container">
+            <p>
+                Click on a food photo to view the full recipe!
+            </p>
 
-            <div class="recipe-card">
+            <div class="recipe-container">
 
-                <div class="recipe-image">
-                    <p>Ramen Image</p>
+
+        
+                <div class="recipe-card">
+
+                    <div class="recipe-image">
+
+                        <a href="https://www.justonecookbook.com/onigiri-rice-balls/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View Onigiri recipe">
+
+                            <img src="images/onigiri.jpg"
+                                 alt="Japanese onigiri rice balls">
+
+                        </a>
+
+                    </div>
+
+                    <div class="recipe-card-content">
+
+                        <h3>Onigiri</h3>
+
+                        <p>
+                            Japanese rice balls inspired
+                            by Fruits Basket.
+                        </p>
+
+                        <a href="recipes.html#onigiri">
+                            View Recipe
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="recipe-card-content">
 
-                    <h3>Ramen</h3>
+               
+                <div class="recipe-card">
 
-                    <p>
-                        A warm and comforting bowl of ramen inspired
-                        by the delicious meals often seen in anime.
-                    </p>
+                    <div class="recipe-image">
 
-                    <a href="recipes.html">View Recipe</a>
+                        <a href="https://www.justonecookbook.com/omurice-japanese-omelette-rice/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View Omurice recipe">
+
+                            <img src="images/omurice.jpg"
+                                 alt="Japanese omurice with rice and omelet">
+
+                        </a>
+
+                    </div>
+
+                    <div class="recipe-card-content">
+
+                        <h3>Omurice</h3>
+
+                        <p>
+                            A delicious Japanese omelet
+                            and rice dish inspired by Blend S.
+                        </p>
+
+                        <a href="recipes.html#omurice">
+                            View Recipe
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                
+                <div class="recipe-card">
+
+                    <div class="recipe-image">
+
+                        <a href="https://wonderlandrecipes.com/2016/08/25/kikis-chocolate-cake/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="View Kiki's Chocolate Cake recipe">
+
+                            <img src="images/kikis-chocolate-cake.webp"
+                                 alt="Kiki's Delivery Service chocolate cake">
+
+                        </a>
+
+                    </div>
+
+                    <div class="recipe-card-content">
+
+                        <h3>Kiki's Chocolate Cake</h3>
+
+                        <p>
+                            A chocolate dessert inspired
+                            by Kiki's Delivery Service.
+                        </p>
+
+                        <a href="recipes.html#kikis-chocolate-cake">
+                            View Recipe
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
-            <div class="recipe-card">
+        </section>
 
-                <div class="recipe-image">
-                    <p>Onigiri Image</p>
-                </div>
 
-                <div class="recipe-card-content">
+        <section id="anime">
 
-                    <h3>Onigiri</h3>
+            <h2>Explore Anime</h2>
+
+            <div class="anime-container">
+
+
+                <!-- FRUITS BASKET -->
+                <div class="anime-card">
+
+                    <h3>Fruits Basket</h3>
 
                     <p>
-                        Try these Japanese rice balls inspired by the
-                        simple and delicious food seen in many anime.
+                        Discover the delicious onigiri
+                        inspired by this anime.
                     </p>
 
-                    <a href="recipes.html">View Recipe</a>
+                    <a href="recipes.html#onigiri" class="button">
+                        Explore Dish
+                    </a>
+
+                </div>
+
+
+                <!-- BLEND S -->
+                <div class="anime-card">
+
+                    <h3>Blend S</h3>
+
+                    <p>
+                        Explore the comforting omurice
+                        featured in this anime.
+                    </p>
+
+                    <a href="recipes.html#omurice" class="button">
+                        Explore Dish
+                    </a>
+
+                </div>
+
+
+                <!-- DEMON SLAYER -->
+                <div class="anime-card">
+
+                    <h3>Demon Slayer</h3>
+
+                    <p>
+                        Discover a delicious Japanese
+                        beef rice bowl inspired by the movie.
+                    </p>
+
+                    <a href="recipes.html#gyudon" class="button">
+                        Explore Dish
+                    </a>
+
+                </div>
+
+
+                <!-- KIKI'S DELIVERY SERVICE -->
+                <div class="anime-card">
+
+                    <h3>Kiki's Delivery Service</h3>
+
+                    <p>
+                        Discover the chocolate cake
+                        inspired by this beloved movie.
+                    </p>
+
+                    <a href="recipes.html#kikis-chocolate-cake"
+                       class="button">
+                        Explore Dish
+                    </a>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- Omurice -->
-            <div class="recipe-card">
 
-                <div class="recipe-image">
-                    <p>Omurice Image</p>
-                </div>
+        <!-- =================================
+             ABOUT SECTION
+             ================================= -->
 
-                <div class="recipe-card-content">
+        <section id="about">
 
-                    <h3>Omurice</h3>
+            <h2>About Anime Bites</h2>
 
-                    <p>
-                        A Japanese comfort food made with fried rice
-                        wrapped in a soft layer of omelet.
-                    </p>
+            <p>
+                I created Anime Bites because I love both
+                anime and cooking! I wanted to combine my
+                passion for these two interests and share
+                delicious anime-inspired dishes with others.
+            </p>
 
-                    <a href="recipes.html">View Recipe</a>
+            <a href="about.html" class="button">
+                Learn More
+            </a>
 
-                </div>
+        </section>
 
+        <section id="contact">
+
+            <h2>Have a Recipe Suggestion?</h2>
+
+            <p>
+                Is there a dish from your favorite anime
+                that you would love to see on Anime Bites?
+                Share your suggestions and ideas!
+            </p>
+
+            <div class="contact-button-container">
+                <a href="contact.html" class="button">
+                    Contact Me
+                </a>
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-
-
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-
         <p>&copy; 2026 Anime Bites</p>
-
         <p>Recipes Inspired by Anime</p>
-
     </footer>
 
 </body>
-
 </html>
